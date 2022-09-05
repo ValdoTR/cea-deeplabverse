@@ -105,11 +105,6 @@
                          "name":"jitsiRoomAdminTag",
                          "type":"string",
                          "value":"admin"
-                        }, 
-                        {
-                         "name":"jitsiTrigger",
-                         "type":"string",
-                         "value":"onaction"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -132,11 +127,6 @@
                          "name":"jitsiRoomAdminTag",
                          "type":"string",
                          "value":"admin"
-                        }, 
-                        {
-                         "name":"jitsiTrigger",
-                         "type":"string",
-                         "value":"onaction"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -159,11 +149,6 @@
                          "name":"jitsiRoomAdminTag",
                          "type":"string",
                          "value":"admin"
-                        }, 
-                        {
-                         "name":"jitsiTrigger",
-                         "type":"string",
-                         "value":"onaction"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -186,11 +171,6 @@
                          "name":"jitsiRoomAdminTag",
                          "type":"string",
                          "value":"admin"
-                        }, 
-                        {
-                         "name":"jitsiTrigger",
-                         "type":"string",
-                         "value":"onaction"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -351,22 +331,17 @@
         {
          "name":"mapDescription",
          "type":"string",
-         "value":"A perfect virtual office to get started with WorkAdventure!"
+         "value":"CEA DeepLabVerse: Project map"
         }, 
         {
          "name":"mapImage",
          "type":"string",
-         "value":"map.png"
-        }, 
-        {
-         "name":"mapLink",
-         "type":"string",
-         "value":"https:\/\/thecodingmachine.github.io\/workadventure-map-starter-kit\/map.json"
+         "value":"project.png"
         }, 
         {
          "name":"mapName",
          "type":"string",
-         "value":"Office"
+         "value":"Project"
         }, 
         {
          "name":"script",
