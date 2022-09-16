@@ -273,12 +273,6 @@
                  "y":288
                 }],
          "opacity":1,
-         "properties":[
-                {
-                 "name":"tag",
-                 "type":"string",
-                 "value":"editor"
-                }],
          "type":"objectgroup",
          "visible":true,
          "x":0,
