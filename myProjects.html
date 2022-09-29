@@ -69,7 +69,7 @@
                                         `</div>`+
                                     `</div>`+
                                 `</div>`
-                projectList.innerHTML(projectDom);
+                projectList.append(projectDom);
             });
 
         })
@@ -84,7 +84,7 @@
         <h1>My projects</h1>
         <div class="row mt-5">
             <div class="col-md-10">
-                <div class="project-list"></div>
+                <div id="project-list"></div>
             </div>
         </div>
     </div>
