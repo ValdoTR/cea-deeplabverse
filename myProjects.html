@@ -11,16 +11,19 @@
         }
     </style>
     <script>
-        try {
+        async function getProjects() {
             const response = await fetch('http://connector.localhost/projects', {
                 method: 'get',
                 headers: new Headers({
                     'Authorization': WA.metadata.accessToken,
                 }),
             });
-            console.log('RESULT', result);
+            console.log('==> RESULT:', result);
             const projects = await response.json();
-            
+        }
+
+        try {
+            const projects = await getProjects()
             console.log('Projects list', projects);
 
             const projectsDiv = document.querySelector("#projects-list");
