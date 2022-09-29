@@ -5,16 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My projects</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <style>
-        body {
-            background-color: white;
-        }
+        body{
+    margin-top:20px;
+    background:#FAFAFA;    
+}
+/*==================================================
+  Nearby People CSS
+  ==================================================*/
+
+.people-nearby .google-maps{
+  background: #f8f8f8;
+  border-radius: 4px;
+  border: 1px solid #f1f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.people-nearby .google-maps .map{
+  height: 300px;
+  width: 100%;
+  border: none;
+}
+
+.people-nearby .nearby-user{
+  padding: 20px 0;
+  border-top: 1px solid #f1f2f2;
+  border-bottom: 1px solid #f1f2f2;
+  margin-bottom: 20px;
+}
+
+img.profile-photo-lg{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/23f948d599.js" crossorigin="anonymous"></script>
     <script src="https://play.workadventu.re/iframe_api.js"></script>
     <script>
         /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
         console.log('API iFrame started successfully');
-
         WA.onInit().then(async () => {
             console.log("onInit START")
             const response = await fetch('http://connector.localhost/projects', {
@@ -27,17 +61,40 @@
             console.log('Projects list', projects);
 
             // Populate HTML
-            const projectsDiv = document.querySelector("#projects-list");
+            const projectsDiv = document.querySelector("#project-list");
             projects.forEach(project => {
-                const projectElement = document.createElement("li");
-                projectElement.innerText = `id: ${project.id} / label: ${project.label} / shortname: ${project.shortname} / mapUrl: ${project.mapUrl}`;
+                const projectElement = document.createElement("p");
+                projectElement.innerText = `Project: ${project.label}, URL: /@/${project.shortname}`;
                 projectsDiv.append(projectElement);
             });
         })
     </script>
 </head>
 <body>
-    <h1>My projects</h1>
-    <ul id="projects-list"></ul>
+    <div class="container">
+        <h1>My projects</h1>
+        <div class="row mt-5">
+            <div class="col-md-10">
+                <section id="project-list"></section>
+                <!--<div class="people-nearby">
+                  <div class="nearby-user">
+                    <div class="row">
+                      <div class="col-md-2 col-sm-2">
+                        <img src="https://picsum.photos/200" alt="user" class="profile-photo-lg">
+                      </div>
+                      <div class="col-md-7 col-sm-7">
+                        <h5><a href="#" class="profile-link">Sophia Page</a></h5>
+                        <p>Software Engineer</p>
+                        <p class="text-muted">500m away</p>
+                      </div>
+                      <div class="col-md-3 col-sm-3">
+                        <button class="btn btn-primary pull-right">Enter map</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
 </body>
 </html>
