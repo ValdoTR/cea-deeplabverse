@@ -23,7 +23,6 @@
                     'Authorization': WA.metadata.accessToken,
                 }),
             });
-            console.log('==> RESULT:', result);
             const projects = await response.json();
             console.log('Projects list', projects);
 
@@ -31,7 +30,7 @@
             const projectsDiv = document.querySelector("#projects-list");
             projects.forEach(project => {
                 const projectElement = document.createElement("li");
-                projectElement.innerText = `Project name: ${project.name}`;
+                projectElement.innerText = `id: ${project.id} / label: ${project.label} / shortname: ${project.shortname} / mapUrl: ${project.mapUrl}`;
                 projectsDiv.append(projectElement);
             });
         })
