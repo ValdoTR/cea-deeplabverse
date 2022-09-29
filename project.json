@@ -185,6 +185,11 @@
                          "value":"myProjects.html"
                         }, 
                         {
+                         "name":"openWebsiteAllowApi",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
                          "name":"silent",
                          "type":"bool",
                          "value":true
