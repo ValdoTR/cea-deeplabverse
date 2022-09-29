@@ -15,11 +15,8 @@
         /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
         console.log('API iFrame started successfully');
 
-        WA.onInit().then(() => {
-            getProjects().catch(e => {console.error(e)})
-        })
-
-        async function getProjects() {
+        WA.onInit().then(async () => {
+            console.log("onInit START")
             const response = await fetch('http://connector.localhost/projects', {
                 method: 'get',
                 headers: new Headers({
@@ -37,7 +34,7 @@
                 projectElement.innerText = `Project name: ${project.name}`;
                 projectsDiv.append(projectElement);
             });
-        }
+        })
     </script>
 </head>
 <body>
