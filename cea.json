@@ -92,14 +92,14 @@
          "name":"floorLayer",
          "objects":[
                 {
-                 "height":224,
+                 "height":1088,
                  "id":17,
-                 "name":"ProjectRoom1",
+                 "name":"Desks",
                  "properties":[
                         {
                          "name":"jitsiRoom",
                          "type":"string",
-                         "value":"ProjectRoom1"
+                         "value":"Desks"
                         }, 
                         {
                          "name":"jitsiRoomAdminTag",
@@ -109,53 +109,9 @@
                  "rotation":0,
                  "type":"area",
                  "visible":true,
-                 "width":256,
+                 "width":416,
                  "x":32,
-                 "y":640
-                }, 
-                {
-                 "height":160,
-                 "id":18,
-                 "name":"ProjectRoom3",
-                 "properties":[
-                        {
-                         "name":"jitsiRoom",
-                         "type":"string",
-                         "value":"ProjectRoom3"
-                        }, 
-                        {
-                         "name":"jitsiRoomAdminTag",
-                         "type":"string",
-                         "value":"admin"
-                        }],
-                 "rotation":0,
-                 "type":"area",
-                 "visible":true,
-                 "width":224,
-                 "x":987.627140139505,
-                 "y":675.581483830057
-                }, 
-                {
-                 "height":160,
-                 "id":19,
-                 "name":"ProjectRoom2",
-                 "properties":[
-                        {
-                         "name":"jitsiRoom",
-                         "type":"string",
-                         "value":"ProjectRoom2"
-                        }, 
-                        {
-                         "name":"jitsiRoomAdminTag",
-                         "type":"string",
-                         "value":"admin"
-                        }],
-                 "rotation":0,
-                 "type":"area",
-                 "visible":true,
-                 "width":480,
-                 "x":376.705136334813,
-                 "y":654.021559923906
+                 "y":96
                 }, 
                 {
                  "height":64,
