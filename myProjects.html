@@ -11,6 +11,13 @@
         }
     </style>
     <script>
+        /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
+        console.log('API iFrame started successfully');
+
+        WA.onInit().then(() => {
+            getProjects().catch(e => {console.error(e)})
+        })
+
         async function getProjects() {
             const response = await fetch('http://connector.localhost/projects', {
                 method: 'get',
@@ -30,8 +37,6 @@
                 projectsDiv.append(projectElement);
             });
         }
-
-        getProjects().catch(e => {console.error(e)})
     </script>
 </head>
 <body>
