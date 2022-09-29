@@ -20,21 +20,18 @@
             });
             console.log('==> RESULT:', result);
             const projects = await response.json();
-        }
-
-        try {
-            const projects = await getProjects()
             console.log('Projects list', projects);
 
+            // Populate HTML
             const projectsDiv = document.querySelector("#projects-list");
             projects.forEach(project => {
                 const projectElement = document.createElement("li");
                 projectElement.innerText = `Project name: ${project.name}`;
                 projectsDiv.append(projectElement);
             });
-        } catch (e) {
-            console.error(e);
         }
+
+        getProjects().catch(e => {console.error(e)})
     </script>
 </head>
 <body>
