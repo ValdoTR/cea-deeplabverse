@@ -28,7 +28,7 @@
         margin-bottom: 20px;
         }
 
-        img.profile-photo-lg{
+        img.project-photo-lg{
         height: 80px;
         width: 80px;
         border-radius: 50%;
@@ -58,15 +58,15 @@
                 let projectDom =`<div class="project">`+
                                     `<div class="row">`+
                                         `<div class="col-md-2 col-sm-2">`+
-                                            `<img src="https://picsum.photos/200" alt="user" class="profile-photo-lg">`+
+                                            `<img src="https://picsum.photos/200" alt="user" class="project-photo-lg">`+
                                         `</div>`+
                                         `<div class="col-md-7 col-sm-7">`+
-                                            `<h5><a href="#" class="profile-link">${project.label}</a></h5>`+
-                                            `<p>XXXXXXXXX</p>`+
-                                            `<p class="text-muted">XXXXXXXXX</p>`+
+                                            `<h5><a href="/@/${project.shortname}" class="project-link">${project.label}</a></h5>`+
+                                            `<p>Could be a description</p>`+
+                                            `<p class="text-muted">Could be the members, or the tags, or something else...</p>`+
                                         `</div>`+
                                         `<div class="col-md-3 col-sm-3">`+
-                                            `<button class="btn btn-primary pull-right" onclick="goToRoom('${project.shortname}')">Enter the map</button>`+
+                                            `<button class="btn btn-primary pull-right" onclick="goToRoom('${project.shortname}')">Teleport to metaverse</button>`+
                                         `</div>`+
                                     `</div>`+
                                 `</div>`
