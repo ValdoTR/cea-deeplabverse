@@ -53,6 +53,7 @@
 
             // Populate HTML
             const projectList = document.querySelector("#project-list");
+            let htmlContent = ""
             projects.forEach(project => {
                 let projectDom =`<div class="project">`+
                                     `<div class="row">`+
@@ -69,8 +70,9 @@
                                         `</div>`+
                                     `</div>`+
                                 `</div>`
-                projectList.append(projectDom);
+                htmlContent += projectDom
             });
+            projectList.insertAdjacentHTML("afterbegin", htmlContent)
 
         })
 
