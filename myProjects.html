@@ -61,7 +61,7 @@
                                             `<img src="https://picsum.photos/200" alt="user" class="project-photo-lg">`+
                                         `</div>`+
                                         `<div class="col-md-7 col-sm-7">`+
-                                            `<h5><a href="/@/${project.shortname}" class="project-link">${project.label}</a></h5>`+
+                                            `<h5><a href="${location.protocol}//${location.host}/@/${project.shortname}" class="project-link">${project.label}</a></h5>`+
                                             `<p>Could be a description</p>`+
                                             `<p class="text-muted">Could be the members, or the tags, or something else...</p>`+
                                         `</div>`+
@@ -73,7 +73,6 @@
                 htmlContent += projectDom
             });
             projectList.insertAdjacentHTML("afterbegin", htmlContent)
-
         })
 
         function goToRoom(room) {
