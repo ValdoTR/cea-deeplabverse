@@ -43,6 +43,8 @@
         console.log('API iFrame started successfully');
 
         WA.onInit().then(async () => {
+            // DEV: http://connector.localhost/projects
+            // PROD: https://tuleap.deeplab.fr/projects
             const response = await fetch('http://connector.localhost/projects', {
                 method: 'get',
                 headers: new Headers({
@@ -58,15 +60,14 @@
                 let projectDom =`<div class="project">`+
                                     `<div class="row">`+
                                         `<div class="col-md-2 col-sm-2">`+
-                                            `<img src="https://picsum.photos/200" alt="user" class="project-photo-lg">`+
+                                            `<img src="project.webp" alt="Project icon" class="project-photo-lg">`+
                                         `</div>`+
                                         `<div class="col-md-7 col-sm-7">`+
                                             `<h5>${project.label}</h5>`+
                                             `<p>Could be a description</p>`+
-                                            `<p class="text-muted">Could be the members, or the tags, or something else...</p>`+
                                         `</div>`+
                                         `<div class="col-md-3 col-sm-3">`+
-                                            `<button class="btn btn-primary pull-right" onclick="goToRoom('${project.shortname}')">Teleport to metaverse</button>`+
+                                            `<button class="btn btn-primary pull-right" onclick="goToRoom('${project.shortname}')">Teleport</button>`+
                                         `</div>`+
                                     `</div>`+
                                 `</div>`
@@ -82,7 +83,106 @@
 </head>
 <body>
     <div class="container">
-        <h1>My projects</h1>
+        <h1>Common maps</h1>
+        <div class="row mt-5">
+            <div class="col-md-10">
+                <div class="project">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2">
+                            <img src="deeplab.png" alt="DeepLab icon" class="project-photo-lg">
+                        </div>
+                        <div class="col-md-7 col-sm-7">
+                            <h5>DeepLabVerse</h5>
+                            <p>The main map of the DeepLabVerse where every CEA employee can meet.</p>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <button class="btn btn-primary pull-right" onclick="goToRoom('/_/global/valdotr.github.io/cea-deeplabverse/map.json')">Teleport</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 mt-2">
+                <div class="project">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2">
+                            <img src="cea-cadarache.png" alt="CEA Cadarache icon" class="project-photo-lg">
+                        </div>
+                        <div class="col-md-7 col-sm-7">
+                            <h5>CEA Cadarache</h5>
+                            <p>The map of the Cadarache center.</p>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <button class="btn btn-primary pull-right" onclick="goToRoom('/_/global/valdotr.github.io/cea-deeplabverse/cea-cadarache.json')">Teleport</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="project">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2">
+                            <img src="cea-dam.png" alt="CEA DAM icon" class="project-photo-lg">
+                        </div>
+                        <div class="col-md-7 col-sm-7">
+                            <h5>CEA DAM</h5>
+                            <p>The map of the DAM Ile-de-France center.</p>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <button class="btn btn-primary pull-right" onclick="goToRoom('/_/global/valdotr.github.io/cea-deeplabverse/cea-dam.json')">Teleport</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="project">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2">
+                            <img src="cea-grenoble.png" alt="CEA Grenoble icon" class="project-photo-lg">
+                        </div>
+                        <div class="col-md-7 col-sm-7">
+                            <h5>CEA Grenoble</h5>
+                            <p>The map of the Grenoble center.</p>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <button class="btn btn-primary pull-right" onclick="goToRoom('/_/global/valdotr.github.io/cea-deeplabverse/cea-grenoble.json')">Teleport</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="project">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2">
+                            <img src="cea-nano-innov.png" alt="CEA Nano-INNOV icon" class="project-photo-lg">
+                        </div>
+                        <div class="col-md-7 col-sm-7">
+                            <h5>CEA Nano-INNOV</h5>
+                            <p>The map of the Nano-INNOV center.</p>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <button class="btn btn-primary pull-right" onclick="goToRoom('/_/global/valdotr.github.io/cea-deeplabverse/cea-nano-innov.json')">Teleport</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="project">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2">
+                            <img src="cea-saclay.png" alt="CEA Saclay icon" class="project-photo-lg">
+                        </div>
+                        <div class="col-md-7 col-sm-7">
+                            <h5>CEA Saclay</h5>
+                            <p>The map of the Saclay center.</p>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <button class="btn btn-primary pull-right" onclick="goToRoom('/_/global/valdotr.github.io/cea-deeplabverse/cea-saclay.json')">Teleport</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>Project maps</h1>
         <div class="row mt-5">
             <div class="col-md-10">
                 <div id="project-list"></div>
