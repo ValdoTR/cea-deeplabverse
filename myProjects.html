@@ -44,8 +44,8 @@
 
         WA.onInit().then(async () => {
             // DEV: http://connector.localhost/projects
-            // PROD: https://tuleap.deeplab.fr/projects
-            const response = await fetch('http://connector.localhost/projects', {
+            // PROD: https://connector.deeplab.fr/projects
+            const response = await fetch('https://connector.deeplab.fr/projects', {
                 method: 'get',
                 headers: new Headers({
                     'Authorization': WA.metadata.accessToken,
