@@ -58,8 +58,9 @@
                     }),
                 });
                 projects = await response.json();
+                errorDiv.ClassList.add("hidden")
             } catch (e) {
-                errorDiv.toggle("hidden")
+                errorDiv.ClassList.remove("hidden")
                 throw e
             }
             
