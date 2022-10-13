@@ -42,7 +42,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"\/_\/global\/valdotr.github.io\/cea-deeplabverse\/map.json"
+                 "value":"\/_\/global\/valdotr.github.io\/cea-deeplabverse\/map.json#from-saclay"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -150,7 +150,7 @@
                  "y":96
                 }, 
                 {
-                 "height":64,
+                 "height":82.6666666666667,
                  "id":25,
                  "name":"myProjects",
                  "properties":[
@@ -172,8 +172,8 @@
                  "rotation":0,
                  "type":"area",
                  "visible":true,
-                 "width":128,
-                 "x":1056,
+                 "width":192,
+                 "x":1024,
                  "y":96
                 }, 
                 {
@@ -2297,12 +2297,12 @@
          "columns":8,
          "firstgid":3090,
          "image":"tilesets\/Blasons.png",
-         "imageheight":384,
+         "imageheight":480,
          "imagewidth":256,
          "margin":0,
          "name":"Blasons",
          "spacing":0,
-         "tilecount":96,
+         "tilecount":120,
          "tileheight":32,
          "tilewidth":32
         }],
