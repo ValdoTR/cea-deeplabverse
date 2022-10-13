@@ -331,14 +331,19 @@
                  "name":"newProject",
                  "properties":[
                         {
-                         "name":"openWebsite",
+                         "name":"openTab",
                          "type":"string",
-                         "value":"newProject.html"
+                         "value":"https:\/\/tuleap.deeplab.fr\/project\/new"
                         }, 
                         {
-                         "name":"silent",
-                         "type":"bool",
-                         "value":true
+                         "name":"openWebsiteTrigger",
+                         "type":"string",
+                         "value":"onaction"
+                        }, 
+                        {
+                         "name":"openWebsiteTriggerMessage",
+                         "type":"string",
+                         "value":"Press SPACE or touch here to open the Tuleap project creation page"
                         }],
                  "rotation":0,
                  "type":"area",
