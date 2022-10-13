@@ -8,7 +8,6 @@ export default defineConfig({
             input: {
                 index: "./index.html",
                 myProjects: "./myProjects.html",
-                newProject: "./newProject.html",
                 ...getMapsScripts(),
             },
         },
