@@ -178,6 +178,60 @@
          "y":0
         }, 
         {
+         "draworder":"topdown",
+         "id":61,
+         "name":"configuration",
+         "objects":[
+                {
+                 "height":0,
+                 "id":31,
+                 "name":"roomCapacity",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"allowed_values",
+                         "type":"string",
+                         "value":"{\n  \"Small (8 seats)\": 8,\n  \"Medium (16 seats)\": 16,\n  \"Large (52 seats)\": 52\n}"
+                        }, 
+                        {
+                         "name":"default",
+                         "type":"int",
+                         "value":8
+                        }, 
+                        {
+                         "name":"description",
+                         "type":"string",
+                         "value":"Select the right capacity for your project (8, 16 or 52 seats)"
+                        }, 
+                        {
+                         "name":"label",
+                         "type":"string",
+                         "value":"Room capacity"
+                        }, 
+                        {
+                         "name":"persist",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"select"
+                        }],
+                 "rotation":0,
+                 "type":"variable",
+                 "visible":true,
+                 "width":0,
+                 "x":66.1730371556267,
+                 "y":93.923020478954
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
          "id":53,
          "layers":[
                 {
@@ -269,8 +323,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":61,
- "nextobjectid":31,
+ "nextlayerid":62,
+ "nextobjectid":32,
  "orientation":"orthogonal",
  "properties":[
         {
